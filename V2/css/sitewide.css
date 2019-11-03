@@ -1,0 +1,224 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/*
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #222;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area.
+	If you have more than one container, you are probably doing
+	something wrong.
+*/
+.container {
+	padding: 1em;
+	background-color: #fff;
+}
+
+
+
+/* ------------------------------------------------------------ */
+/* media query containing styles for larger screens */
+@media (min-width: 720px) {
+
+	/* container on larger screens */
+	.container {
+		width: 90%;
+		max-width: 1200px;
+		margin: 2em;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 1em;
+
+	}
+
+	.story {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+
+/* homepage content */
+
+	.homepagecontent{
+		grid-column-start: 3;
+		grid-column-end: 6;
+		font-family: 'Markazi Text', serif;
+		font-size: 18px;
+		margin-left: 1em;
+	}
+
+	.arabic{
+	font-family: 'Amiri', serif;
+	color: #E0702E;
+	font-size: 36px;
+	grid-column: 3 / 6;
+	line-height: 1em;
+	}
+
+	.header{
+		font-family: 'Rakkas', cursive;
+		color: #2B0A13;
+		font-size: 36px;
+		grid-column: 3 / 6;
+		line-height: 1em;
+
+	}
+
+.navbar {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	background-image: url("../img/homepage.jpg");
+	height: 100%;
+	width: 300px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.homepagenav {
+	margin-top: 2em;
+	margin-left: 2em;
+	grid-column-start: 2;
+	font-family: 'Rakkas', cursive;
+	font-size: 25px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.synopsisnav{
+	margin-top: 1em;
+	margin-left: 2.05em;
+	grid-column-start: 2;
+	font-family: 'Rakkas', cursive;
+	font-size: 25px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.translationsnav {
+	margin-top: 1em;
+	margin-left: 2em;
+	grid-column-start: 2;
+	font-family: 'Rakkas', cursive;
+	font-size: 25px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.culturenav {
+	margin-top: 1em;
+	margin-left: 2em;
+	grid-column-start: 2;
+	font-family: 'Rakkas', cursive;
+	font-size: 25px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.literarytechniquesnav{
+	margin-top: 1em;
+	margin-left: 2em;
+	grid-column-start: 2;
+	font-family: 'Rakkas', cursive;
+	font-size: 25px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #306146;
+}
+
+
+/* end homepage content */
+/* start synopsis content */
+
+.synopsiscontent{
+	grid-column-start: 3;
+	grid-column-end: 6;
+	font-family: 'Markazi Text', serif;
+	font-size: 18px;
+	margin-left: 1em;
+	margin: 2em;
+}
+
+.navbarsynopsis {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+}
+/* end synopsis content */
+/* start translations content */
+
+.translationscontent{
+	grid-column-start: 3;
+	grid-column-end: 6;
+	font-family: 'Markazi Text', serif;
+	font-size: 18px;
+	margin-left: 1em;
+	margin: 2em;
+}
+/* end translations content */
+
+/* start culture content */
+.culturecontent{
+	grid-column-start: 3;
+	grid-column-end: 6;
+	font-family: 'Markazi Text', serif;
+	font-size: 18px;
+	margin-left: 1em;
+	margin: 2em;
+}
+
+.literarytechniquescontent{
+	grid-column-start: 3;
+	grid-column-end: 6;
+	font-family: 'Markazi Text', serif;
+	font-size: 18px;
+	margin-left: 1em;
+	margin: 2em;
+}
+
+h3{
+	font-size: 28px;
+}
+
+} /* end media query */
