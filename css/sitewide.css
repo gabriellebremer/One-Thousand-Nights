@@ -57,13 +57,15 @@ body {
 		margin-right: auto;
 		margin-left: auto;
 		padding: 1em;
-		border: 1px solid #ddd;
+
 	}
 
 	.story {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	}
+
+/* homepage content */
 
 	.homepagecontent{
 		grid-column-start: 3;
@@ -90,28 +92,142 @@ body {
 
 	}
 
-.navbar{
-	grid-column-start: 1;
-}
-
-.navbarwords{
-	grid-column-start: 1;
-}
-
-img{
+.navbar {
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row-start: 1;
-	grid-row-end: 3;
+	background-image: url("../img/homepage.jpg");
+	height: 100%;
+	width: 300px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.homepagenav {
+	margin-top: 2em;
+	margin-left: 2em;
+	grid-column-start: 2;
+	font-family: 'Rakkas', cursive;
+	font-size: 25px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.synopsisnav{
+	margin-top: 1em;
+	margin-left: 2.05em;
+	grid-column-start: 2;
+	font-family: 'Rakkas', cursive;
+	font-size: 25px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.translationsnav {
+	margin-top: 1em;
+	margin-left: 2em;
+	grid-column-start: 2;
+	font-family: 'Rakkas', cursive;
+	font-size: 25px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.culturenav {
+	margin-top: 1em;
+	margin-left: 2em;
+	grid-column-start: 2;
+	font-family: 'Rakkas', cursive;
+	font-size: 25px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.literarytechniquesnav{
+	margin-top: 1em;
+	margin-left: 2em;
+	grid-column-start: 2;
+	font-family: 'Rakkas', cursive;
+	font-size: 25px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #306146;
 }
 
 
+/* end homepage content */
+/* start synopsis content */
 
+.synopsiscontent{
+	grid-column-start: 3;
+	grid-column-end: 6;
+	font-family: 'Markazi Text', serif;
+	font-size: 18px;
+	margin-left: 1em;
+	margin: 2em;
+}
 
+.navbarsynopsis {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+}
+/* end synopsis content */
+/* start translations content */
 
+.translationscontent{
+	grid-column-start: 3;
+	grid-column-end: 6;
+	font-family: 'Markazi Text', serif;
+	font-size: 18px;
+	margin-left: 1em;
+	margin: 2em;
+}
+/* end translations content */
 
+/* start culture content */
+.culturecontent{
+	grid-column-start: 3;
+	grid-column-end: 6;
+	font-family: 'Markazi Text', serif;
+	font-size: 18px;
+	margin-left: 1em;
+	margin: 2em;
+}
 
+.literarytechniquescontent{
+	grid-column-start: 3;
+	grid-column-end: 6;
+	font-family: 'Markazi Text', serif;
+	font-size: 18px;
+	margin-left: 1em;
+	margin: 2em;
+}
 
+h3{
+	font-size: 28px;
+}
+
+div.rectangle{
+	width:200px;
+    height:100px;
+    background-color: white;
+		opacity: 50%;
+		margin-top: 5em;
+}
 
 
 } /* end media query */
