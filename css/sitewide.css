@@ -92,13 +92,16 @@ body {
 
 	}
 
+/* end homepage content */
+/* navbar content */
+
 .navbar {
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row-start: 1;
 	background-image: url("../img/homepage.jpg");
 	height: 100%;
-	width: 300px;
+	max-width: 300px;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -108,15 +111,22 @@ body {
 	padding-top: 20px;
 }
 
+.navbar a{
+	background: rgba(233, 191, 81, 0.75);
+	padding: 1em;
+	display: block;
+}
+
 .homepagenav {
 	margin-top: 2em;
 	margin-left: 2em;
 	grid-column-start: 2;
 	font-family: 'Rakkas', cursive;
 	font-size: 25px;
-	text-align: center;
 	display: inline-block;
 	text-decoration: none;
+	color: #2B0A13;
+	list-style:
 }
 
 .synopsisnav{
@@ -125,9 +135,9 @@ body {
 	grid-column-start: 2;
 	font-family: 'Rakkas', cursive;
 	font-size: 25px;
-	text-align: center;
 	display: inline-block;
 	text-decoration: none;
+	color: #2B0A13;
 }
 
 .translationsnav {
@@ -136,9 +146,9 @@ body {
 	grid-column-start: 2;
 	font-family: 'Rakkas', cursive;
 	font-size: 25px;
-	text-align: center;
 	display: inline-block;
 	text-decoration: none;
+	color: #2B0A13;
 }
 
 .culturenav {
@@ -147,9 +157,9 @@ body {
 	grid-column-start: 2;
 	font-family: 'Rakkas', cursive;
 	font-size: 25px;
-	text-align: center;
 	display: inline-block;
 	text-decoration: none;
+	color: #2B0A13;
 }
 
 .literarytechniquesnav{
@@ -158,17 +168,20 @@ body {
 	grid-column-start: 2;
 	font-family: 'Rakkas', cursive;
 	font-size: 25px;
-	text-align: center;
 	display: inline-block;
 	text-decoration: none;
+	color: #2B0A13;
 }
 
 a:hover {
 	color: #306146;
 }
 
+.navbar ul{
+	list-style: none;
+}
 
-/* end homepage content */
+/* end navbar content */
 /* start synopsis content */
 
 .synopsiscontent{
@@ -180,11 +193,6 @@ a:hover {
 	margin: 2em;
 }
 
-.navbarsynopsis {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row-start: 1;
-}
 /* end synopsis content */
 /* start translations content */
 
@@ -208,6 +216,10 @@ a:hover {
 	margin: 2em;
 }
 
+h5{
+	font-size: 25px;
+}
+
 .literarytechniquescontent{
 	grid-column-start: 3;
 	grid-column-end: 6;
@@ -221,12 +233,8 @@ h3{
 	font-size: 28px;
 }
 
-div.rectangle{
-	width:200px;
-    height:100px;
-    background-color: white;
-		opacity: 50%;
-		margin-top: 5em;
+p{
+	line-height: 20pt;
 }
 
 
