@@ -73,7 +73,13 @@ body {
 		font-family: 'Markazi Text', serif;
 		font-size: 18px;
 		margin-left: 1em;
+		background-image: url("../img/background.jpg");
+		background-size: 300px, auto;
+		background-repeat: no-repeat;
+		background-position: top;
+		background-position: right;
 	}
+
 
 	.arabic{
 	font-family: 'Amiri', serif;
@@ -101,7 +107,7 @@ body {
 	grid-row-start: 1;
 	background-image: url("../img/homepage.jpg");
 	height: 100%;
-	max-width: 300px;
+	max-width: 2000px;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -109,6 +115,10 @@ body {
 	background-color: #111;
 	overflow-x: hidden;
 	padding-top: 20px;
+	background-size:  cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
 }
 
 .navbar a{
@@ -191,6 +201,22 @@ a:hover {
 	font-size: 18px;
 	margin-left: 1em;
 	margin: 2em;
+	background-image: url("../img/background.jpg");
+	background-size: 300px, auto;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-position: right;
+}
+
+.synopsispq{
+	font-size: 25px;
+	margin-right: 0;
+	margin-left: 0.5em;
+	line-height: 1.25em;
+	color: #B52D1D;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	font-family: 'Rakkas';
 }
 
 /* end synopsis content */
@@ -203,6 +229,33 @@ a:hover {
 	font-size: 18px;
 	margin-left: 1em;
 	margin: 2em;
+	background-image: url("../img/background.jpg");
+	background-size: 300px, auto;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-position: right;
+}
+
+.indiantranslationpq{
+	font-size: 25px;
+	margin-right: 0;
+	margin-left: 0.5em;
+	line-height: 1.25em;
+	color: #306146;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	font-family: 'Rakkas';
+}
+
+.moderntranslationpq{
+	font-size: 20px;
+	margin-right: 0;
+	margin-left: 0.5em;
+	line-height: 1.25em;
+	color: #E0702E;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	font-family: 'Rakkas';
 }
 /* end translations content */
 
@@ -214,11 +267,30 @@ a:hover {
 	font-size: 18px;
 	margin-left: 1em;
 	margin: 2em;
+	background-image: url("../img/background.jpg");
+	background-size: 300px, auto;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-position: right;
+}
+
+.arabicculturepq{
+	font-size: 20px;
+	margin-right: 0;
+	margin-left: 0.5em;
+	line-height: 1.25em;
+	color: #B52D1D;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	font-family: 'Rakkas';
 }
 
 h5{
 	font-size: 25px;
 }
+
+/* end culture content*/
+/* end literary techniques content*/
 
 .literarytechniquescontent{
 	grid-column-start: 3;
@@ -229,6 +301,42 @@ h5{
 	margin: 2em;
 }
 
+
+	.foreshadowingpq{
+		font-size: 20px;
+		margin-right: 0;
+		margin-left: 0.5em;
+		line-height: 1.25em;
+		color: #306146;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		font-family: 'Rakkas';
+	}
+
+	.crimefictionpq{
+		font-size: 20px;
+		margin-right: 0;
+		margin-left: 0.5em;
+		line-height: 1.25em;
+		color: #E0702E;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		font-family: 'Rakkas';
+	}
+
+	.embeddednarrativepq{
+		font-size: 20px;
+		margin-right: 0;
+		margin-left: 0.5em;
+		line-height: 1.25em;
+		color: #B52D1D;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		font-family: 'Rakkas';
+	}
+/* end culture content*/
+/* start random rules*/
+
 h3{
 	font-size: 28px;
 }
@@ -236,6 +344,19 @@ h3{
 p{
 	line-height: 20pt;
 }
+
+br{
+	margin-bottom: 1em;
+}
+
+.lampsimage{
+	background-image: url("../img/background.jpg");
+	background-size: 300px, auto;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-position: right;
+}
+/* end random rules*/
 
 
 } /* end media query */
