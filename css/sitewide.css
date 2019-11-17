@@ -73,7 +73,7 @@ body {
 		font-family: 'Markazi Text', serif;
 		font-size: 18px;
 		margin-left: 1em;
-		background-image: url("../img/background.jpg");
+		background-image: url("../img/bluebackground.jpg");
 		background-size: 300px, auto;
 		background-repeat: no-repeat;
 		background-position: top;
@@ -184,7 +184,7 @@ body {
 }
 
 a:hover {
-	color: #306146;
+	color: #B52D1D;
 }
 
 .navbar ul{
@@ -241,7 +241,7 @@ a:hover {
 	margin-right: 0;
 	margin-left: 0.5em;
 	line-height: 1.25em;
-	color: #306146;
+	color: #30615e;
 	margin-top: 2em;
 	margin-bottom: 2em;
 	font-family: 'Rakkas';
@@ -307,7 +307,7 @@ h5{
 		margin-right: 0;
 		margin-left: 0.5em;
 		line-height: 1.25em;
-		color: #306146;
+		color: #30615e;
 		margin-top: 2em;
 		margin-bottom: 2em;
 		font-family: 'Rakkas';
@@ -348,7 +348,8 @@ p{
 br{
 	margin-bottom: 1em;
 }
-
+/* end random rules*/
+/*lamp background image*/
 .lampsimage{
 	background-image: url("../img/background.jpg");
 	background-size: 300px, auto;
@@ -356,7 +357,30 @@ br{
 	background-position: top;
 	background-position: right;
 }
-/* end random rules*/
+
+.orangelampsimage{
+	background-image: url("../img/orangebackground.jpg");
+	background-size: 300px, auto;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-position: right;
+}
+
+.redlampsimage{
+	background-image: url("../img/redbackground.jpg");
+	background-size: 300px, auto;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-position: right;
+}
+
+.bluelampsimage{
+	background-image: url("../img/bluebackground.jpg");
+	background-size: 300px, auto;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-position: right;
+}
 
 
 } /* end media query */
